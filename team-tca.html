@@ -126,38 +126,10 @@
             width: 70%;
         }
     }
-    
-    footer {
-        padding-top: 10px;
-        left: 0;
-        bottom: 0;
-        height: 80px;
-        width: 100%;
-        background-color: grey;
-        color: rgb(255, 255, 255, 0.8);
-        text-align: center;
-    }
 </style>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent mb-0 radius-0 " style="font-family:Courier;">
-            <a href="#" class="navbar-brand">The Cyber Alliance</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link px-3"><i class="fa fa-home"></i></i> Home</a>
-                    <a href="events.html" class="nav-item nav-link px-3 "><i class="fa fa-calendar"></i> Events</a>
-                    <a href="achievements.html" class="nav-item nav-link px-3 "><i class="fa fa-trophy"></i> Achievements</a>
-                    <a href="code-of-conduct.html" class="nav-item nav-link px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
-                    <a href="team-tca.html" class="nav-item nav-link px-3 active"><i class="fa fa-users"></i> Team TCA</a>
-                    <a href="about.html" class="nav-item nav-link px-3"> <i class="fa fa-info"></i> About TCA</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header></header>
     <br>
     <div style="font-family: 'Grenze Gotisch', cursive; font-weight: 400; text-align: center; color:  #f29909;">
         <h2>Team Mentor</h2>
@@ -196,15 +168,11 @@
 
         </div>
     </div>
-
-
     <br>
     <footer>
-        <div style="">
-            <p>The Cyber Alliance</p>
-            <p>Copyright &copy; 2020. All Rights Reserved</p>
-        </div>
+
     </footer>
+
     <!-- scripts -->
 
     <script src="js/particles.js"></script>
@@ -401,6 +369,13 @@
             text += '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
 
             $("#imagesDiv").append(text);
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNav(["", "", "", "", "", "active"], "");
+            createFooter();
         });
     </script>
 </body>
