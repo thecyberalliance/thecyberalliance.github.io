@@ -213,7 +213,15 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [];
+    let events = [{
+        topic: "Introducing The Cyber Alliance 2025",
+        day: "08",
+        month: "Jan",
+        year: "2025",
+        description: "A perfect kickstart for your learning adventure...",
+        image: "media/events/event1.jpg",
+        link: "#"
+    }];
 
     var text = "";
 
