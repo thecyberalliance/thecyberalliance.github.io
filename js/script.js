@@ -225,20 +225,35 @@ function createUpcomingEvents() {
 
     var text = "";
 
+    // events.forEach(event => {
+    //     text += `
+    //     <!-- Column -->
+    //     <div class="col-md-4 on-hover">
+    //         <div class="card border-0 mb-4">
+    //             <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
+    //             <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
+    //             <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
+    //             <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
+    //             <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
+    //         </div>
+    //     </div>
+    //     `;
+    // });
+    
     events.forEach(event => {
         text += `
         <!-- Column -->
         <div class="col-md-4 on-hover">
             <div class="card border-0 mb-4">
-                <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
-                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
-                <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
-                <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-                <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
+                <a href="${event.link}"><img class="card-img-top" src="${event.image}" alt="Event"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">${event.month}<span class="d-block">${event.day}</span>${event.year}</div>
+                <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
+                <p class="text-grey mt-3 ml-2 mr-2">${event.description}</p>
             </div>
         </div>
         `;
     });
+
     $("#upcoming-events").append(text);
 }
 
