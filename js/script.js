@@ -77,7 +77,7 @@ function createNav1(activePage, fixed) {
 function createFooter() {
     $("footer").append(`
         <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 20px 0;text-align: center;color: rgb(255, 255, 255, 0.8);">
-            In Association with Student Development Cell at <a href="https://rsu.ac.in/home/">Rashtriya Raksha University</a><br /> Managed by students of <a href="https://rsu.ac.in/school-of-information-technology-and-cyber-security/">SITAICS</a>
+            A Student Run Club at <a href="https://rru.ac.in/school-of-it-artificial-intelligence-and-cyber-security-sitaics/">SITAICS</a> of <a href="https://rru.ac.in/">Rashtriya Raksha University</a><br />
         </div>
     `);
 }
