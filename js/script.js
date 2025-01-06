@@ -1,121 +1,79 @@
-// function createNav(activePage, fixed) {
-//     let text = `
-//         <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
-//             <a href="index.html" class="navbar-brand">The Cyber Alliance</a>
-//             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-//               <span class="navbar-toggler-icon"></span>
-//             </button>
-//             <div class="collapse navbar-collapse" id="navbarCollapse">
-//                 <div class="navbar-nav ml-auto">
-//                     <a href="index.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-home"></i></i> Home</a>
-//                     <a href="about.html" class="nav-item nav-link ` + activePage[1] + ` px-3 "> <i class="fa fa-info"></i> About TCA</a>
-//                     <a href="events.html" class="nav-item nav-link ` + activePage[2] + ` px-3 "><i class="fa fa-calendar"></i> Events</a>
-//                     <a href="news.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-bolt"></i> Awareness</a>
-//                     <a href="code-of-conduct.html" class="nav-item nav-link ` + activePage[4] + ` px-3  "><i class="fa fa-terminal"></i> Code of Conduct</a>
-//                     <a href="team-tca.html" class="nav-item nav-link ` + activePage[5] + ` px-3  "><i class="fa fa-users"></i> Team TCA</a>
-//                 </div>
-//             </div>
-//         </nav>
-//     `;
-
-//     if (activePage[0] === "active") {
-//         $("header").append(text);
-//     } else {
-//         $("header").append(text);
-//     }
-
-//     $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
-// }
-
-// function createSubNav(activePage, fixed) {
-//     let text = `
-//     <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 " style="font-family:Courier;">
-//     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
-//         <span class="navbar-toggler-icon"></span>
-//       </button>
-//     <div class="collapse navbar-collapse" id="navbarCollapse1">
-//         <div class="navbar-nav ml-auto">
-//             <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
-//             <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
-//             <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
-//             <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
-//             <a class="nav-item nav-link disabled` + activePage[4] + ` px-3" data-toggle="tooltip" data-placement="bottom" title="Coming Soon" ><i class="fa fa-question"></i> Quiz</a>
-//         </div>
-//     </div>
-// </nav>
-//     `;
-
-//     $("#awareness").append(text);
-
-//     // $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
-// }
-
-// function createNav1(activePage, fixed) {
-//     let text = `
-//         <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
-//             <div class="collapse navbar-collapse" id="navbarCollapse">
-//                 <div class="navbar-nav ml-auto">
-//                     <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
-//                     <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
-//                     <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
-//                     <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
-//                     <a href="quiz.html" class="nav-item nav-link ` + activePage[4] + ` px-3"><i class="fa fa-question"></i> Quiz</a>
-//                 </div>
-//             </div>
-//         </nav>
-//     `;
-
-//     if (activePage[0] === "active") {
-//         $("header").append(text);
-//     } else {
-//         $("header").append(text);
-//     }
-
-//     $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
-// }
-
-// Navigation Management
-function createNav(activePage, fixed = '') {
-    const navHTML = `
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-0 radius-0 ${fixed}" style="font-family:Courier;">
+function createNav(activePage, fixed) {
+    let text = `
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
             <a href="index.html" class="navbar-brand">The Cyber Alliance</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link ${activePage[0]} px-3"><i class="fa fa-home"></i> Home</a>
-                    <a href="about.html" class="nav-item nav-link ${activePage[1]} px-3"><i class="fa fa-info"></i> About TCA</a>
-                    <a href="events.html" class="nav-item nav-link ${activePage[2]} px-3"><i class="fa fa-calendar"></i> Events</a>
-                    <a href="awareness.html" class="nav-item nav-link ${activePage[3]} px-3"><i class="fa fa-bolt"></i> Awareness</a>
-                    <a href="code-of-conduct.html" class="nav-item nav-link ${activePage[4]} px-3"><i class="fa fa-terminal"></i> Code of Conduct</a>
-                    <a href="team-tca.html" class="nav-item nav-link ${activePage[5]} px-3"><i class="fa fa-users"></i> Team TCA</a>
+                    <a href="index.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-home"></i></i> Home</a>
+                    <a href="about.html" class="nav-item nav-link ` + activePage[1] + ` px-3 "> <i class="fa fa-info"></i> About TCA</a>
+                    <a href="events.html" class="nav-item nav-link ` + activePage[2] + ` px-3 "><i class="fa fa-calendar"></i> Events</a>
+                    <a href="news.html" class="nav-item nav-link ` + activePage[3] + ` px-3 "><i class="fa fa-bolt"></i> Awareness</a>
+                    <a href="code-of-conduct.html" class="nav-item nav-link ` + activePage[4] + ` px-3  "><i class="fa fa-terminal"></i> Code of Conduct</a>
+                    <a href="team-tca.html" class="nav-item nav-link ` + activePage[5] + ` px-3  "><i class="fa fa-users"></i> Team TCA</a>
                 </div>
             </div>
         </nav>
     `;
-    $("header").append(navHTML);
-    $("head").append('<link rel="icon" type="image/png" href="media/favicon.png">');
+
+    if (activePage[0] === "active") {
+        $("header").append(text);
+    } else {
+        $("header").append(text);
+    }
+
+    $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
 }
 
-function createSubNav(activePage) {
-    const subNavHTML = `
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-0 radius-0" style="font-family:Courier;">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse1">
+function createSubNav(activePage, fixed) {
+    let text = `
+    <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 " style="font-family:Courier;">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <div class="navbar-nav ml-auto">
+            <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
+            <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
+            <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
+            <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
+            <a class="nav-item nav-link disabled` + activePage[4] + ` px-3" data-toggle="tooltip" data-placement="bottom" title="Coming Soon" ><i class="fa fa-question"></i> Quiz</a>
+        </div>
+    </div>
+</nav>
+    `;
+
+    $("#awareness").append(text);
+
+    // $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
+}
+
+function createNav1(activePage, fixed) {
+    let text = `
+        <nav class="navbar navbar-expand-md navbar-dark  bg-dark mb-0 radius-0 ` + fixed + `" style="font-family:Courier;">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
-                    <a href="blog.html" class="nav-item nav-link ${activePage[1]} px-3"><i class="fa fa-rss-square"></i> Blog</a>
-                    <a href="tools.html" class="nav-item nav-link ${activePage[2]} px-3"><i class="fa fa-wrench"></i> Tools</a>
-                    <a href="security-practices.html" class="nav-item nav-link ${activePage[3]} px-3"><i class="fa fa-shield"></i> Security Practices</a>
-                    <a class="nav-item nav-link disabled ${activePage[4]} px-3" data-toggle="tooltip" data-placement="bottom" title="Coming Soon"><i class="fa fa-question"></i> Quiz</a>
+                    <a href="news.html" class="nav-item nav-link ` + activePage[0] + ` px-3"><i class="fa fa-newspaper-o"></i> News</a>
+                    <a href="blog.html" class="nav-item nav-link ` + activePage[1] + ` px-3"> <i class="fa fa-rss-square"></i> Blog</a>
+                    <a href="tools.html" class="nav-item nav-link ` + activePage[2] + ` px-3"><i class="fa fa-wrench"></i> Tools</a>
+                    <a href="security-practices.html" class="nav-item nav-link ` + activePage[3] + ` px-3"><i class="fa fa-shield"></i> Security Practices</a>
+                    <a href="quiz.html" class="nav-item nav-link ` + activePage[4] + ` px-3"><i class="fa fa-question"></i> Quiz</a>
                 </div>
             </div>
         </nav>
     `;
-    $("#awareness").append(subNavHTML);
+
+    if (activePage[0] === "active") {
+        $("header").append(text);
+    } else {
+        $("header").append(text);
+    }
+
+    $("head").append(`<link rel="icon" type="image/png" href="media/favicon.png">`);
 }
+
 
 function createFooter() {
     $("footer").append(`
