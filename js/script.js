@@ -215,7 +215,7 @@ function createPastEvents() {
 function createUpcomingEvents() {
     let events = [{
         topic: "Introducing The Cyber Alliance 2025",
-        day: "08",
+        day: "09",
         month: "Jan",
         year: "2025",
         description: "A perfect kickstart for your learning adventure...",
