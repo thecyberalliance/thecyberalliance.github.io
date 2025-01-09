@@ -265,7 +265,7 @@ function createPastEvents() {
         year: "2025",
         description: "A perfect kickstart for your learning adventure...",
         image: "media/events/event1.jpg",
-        link: "#"
+        link: "https://www.linkedin.com/posts/the-cyber-alliance_cybersecurity-studentclub-rru-activity-7283059846273208320-yRlX?utm_source=share&utm_medium=member_desktop"
     }, {
         topic: "Hands-On CTF Session",
         day: "02",
