@@ -281,6 +281,7 @@ function createPastEvents() {
         year: "2021",
         description: "Getting started with playing CTF for absolute beginners...",
         image: "media/events/event4.png",
+        image: "media/events/1.png",
         link: "#",
     }, {
         topic: "Introduction to Cyber Security",
@@ -289,6 +290,7 @@ function createPastEvents() {
         year: "2020",
         description: "An introductory session for absolute beginners in Cyber Security.",
         image: "media/events/event3.png",
+        // image: "media/events/1.png",
         link: "#",
     }, {
         topic: "Introduction to Linux and Shell",
@@ -297,6 +299,7 @@ function createPastEvents() {
         year: "2020",
         description: "Basic Linux and Shell Programming for absolute beginners...",
         image: "media/events/event2.png",
+        // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=xPAJf-tc80c",
     }, {
         topic: "Introducing The Cyber Alliance",
@@ -305,6 +308,7 @@ function createPastEvents() {
         year: "2020",
         description: "A perfect kickstart for your learning adventure...",
         image: "media/events/event1.jpg",
+        // image: "media/events/1.png",
         link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
     }];
 
@@ -314,17 +318,11 @@ function createPastEvents() {
         text += `
         <!-- Column -->
         <div class="col-md-4 on-hover">
-            <div class="card border-0 mb-4" style="min-height: 450px;">
-                <div style="height: 250px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                    <a href="${event.link}">
-                        <img class="card-img-top" src="${event.image}" alt="Event" style="max-width: 100%; max-height: 250px; width: auto; height: auto;">
-                    </a>
-                </div>
+            <div class="card border-0 mb-4">
+                <a href="${event.link}"><img class="card-img-top" src="${event.image}" alt="Event"></a>
                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">${event.month}<span class="d-block">${event.day}</span>${event.year}</div>
-                <div class="p-3">
-                    <h5 class="font-weight-medium"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
-                    <p class="text-grey">${event.description}</p>
-                </div>
+                <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
+                <p class="text-grey mt-3 ml-2 mr-2">${event.description}</p>
             </div>
         </div>
         `;
