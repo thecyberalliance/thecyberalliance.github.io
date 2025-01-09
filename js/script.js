@@ -147,7 +147,17 @@ function createEvent() {
 
 
 function createPastEvents() {
-    let events = [{
+    let events = [
+        {
+            topic: "Introduction to The Cyber Alliance 2025",
+            day: "09",
+            month: "Jan",
+            year: "2025",
+            description: "A perfect kickstart for your learning adventure...",
+            image: "media/events/event1.jpg",
+            link: "https://www.linkedin.com/posts/the-cyber-alliance_cybersecurity-studentclub-rru-activity-7283059846273208320-yRlX?utm_source=share&utm_medium=member_desktop"
+        }
+        {
         topic: "Hands-On CTF Session",
         day: "02",
         month: "May",
@@ -213,15 +223,17 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [{
-        topic: "Introduction to The Cyber Alliance 2025",
-        day: "09",
-        month: "Jan",
-        year: "2025",
-        description: "A perfect kickstart for your learning adventure...",
-        image: "media/events/event1.jpg",
-        link: "#"
-    }];
+    let events = [
+    // {
+    //     topic: "Introduction to The Cyber Alliance 2025",
+    //     day: "09",
+    //     month: "Jan",
+    //     year: "2025",
+    //     description: "A perfect kickstart for your learning adventure...",
+    //     image: "media/events/event1.jpg",
+    //     link: "#"
+    // }
+];
 
     var text = "";
 
