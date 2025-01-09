@@ -314,8 +314,12 @@ function createPastEvents() {
         text += `
         <!-- Column -->
         <div class="col-md-4 on-hover">
-            <div class="card border-0 mb-4" style="height: 400px;">
-                <a href="${event.link}"><img class="card-img-top" src="${event.image}" alt="Event" style="height: 200px; object-fit: cover;"></a>
+            <div class="card border-0 mb-4" style="min-height: 450px;">
+                <div style="height: 250px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                    <a href="${event.link}">
+                        <img class="card-img-top" src="${event.image}" alt="Event" style="max-width: 100%; max-height: 250px; width: auto; height: auto;">
+                    </a>
+                </div>
                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">${event.month}<span class="d-block">${event.day}</span>${event.year}</div>
                 <div class="p-3">
                     <h5 class="font-weight-medium"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
