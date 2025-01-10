@@ -212,50 +212,50 @@ function createEvent() {
 //     $("#past-events").append(text);
 // }
 
-// function createUpcomingEvents() {
-//     let events = [{
-//         topic: "Introduction to The Cyber Alliance 2025",
-//         day: "09",
-//         month: "Jan",
-//         year: "2025",
-//         description: "A perfect kickstart for your learning adventure...",
-//         image: "media/events/event1.jpg",
-//         link: "#"
-//     }];
+function createUpcomingEvents() {
+    let events = [{
+        topic: "Introduction to CTF",
+        day: "11",
+        month: "Jan",
+        year: "2025",
+        description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
+        image: "media/events/Introduction_to_CTF.png",
+        link: "#"
+    }];
 
-//     var text = "";
+    var text = "";
 
-//     // events.forEach(event => {
-//     //     text += `
-//     //     <!-- Column -->
-//     //     <div class="col-md-4 on-hover">
-//     //         <div class="card border-0 mb-4">
-//     //             <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
-//     //             <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
-//     //             <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
-//     //             <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-//     //             <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
-//     //         </div>
-//     //     </div>
-//     //     `;
-//     // });
+    // events.forEach(event => {
+    //     text += `
+    //     <!-- Column -->
+    //     <div class="col-md-4 on-hover">
+    //         <div class="card border-0 mb-4">
+    //             <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
+    //             <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
+    //             <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
+    //             <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
+    //             <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
+    //         </div>
+    //     </div>
+    //     `;
+    // });
     
-//     events.forEach(event => {
-//         text += `
-//         <!-- Column -->
-//         <div class="col-md-4 on-hover">
-//             <div class="card border-0 mb-4">
-//                 <a href="${event.link}"><img class="card-img-top" src="${event.image}" alt="Event"></a>
-//                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">${event.month}<span class="d-block">${event.day}</span>${event.year}</div>
-//                 <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
-//                 <p class="text-grey mt-3 ml-2 mr-2">${event.description}</p>
-//             </div>
-//         </div>
-//         `;
-//     });
+    events.forEach(event => {
+        text += `
+        <!-- Column -->
+        <div class="col-md-4 on-hover">
+            <div class="card border-0 mb-4">
+                <a href="${event.link}"><img class="card-img-top" src="${event.image}" alt="Event"></a>
+                <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">${event.month}<span class="d-block">${event.day}</span>${event.year}</div>
+                <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="${event.link}" class="text-decoration-none link">${event.topic}</a></h5>
+                <p class="text-grey mt-3 ml-2 mr-2">${event.description}</p>
+            </div>
+        </div>
+        `;
+    });
 
-//     $("#upcoming-events").append(text);
-// }
+    $("#upcoming-events").append(text);
+}
 
 function createPastEvents() {
     let events = [{
@@ -330,19 +330,6 @@ function createPastEvents() {
     $("#past-events").append(text);
 }
 
-function createUpcomingEvents() {
-    let events = [{
-        topic: "Introduction to CTF",
-        day: "11",
-        month: "Jan",
-        year: "2025",
-        description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
-        image: "media/events/Introduction_to_CTF.png",
-        link: "#"
-    }];
-    var text = "";
-    $("#upcoming-events").append(text);
-}
 
 function createTools() {
     let tools = [{
