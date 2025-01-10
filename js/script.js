@@ -331,7 +331,15 @@ function createPastEvents() {
 }
 
 function createUpcomingEvents() {
-    let events = [];
+    let events = [{
+        topic: "Introduction to CTF",
+        day: "11",
+        month: "Jan",
+        year: "2025",
+        description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
+        image: "media/events/Introduction_to_CTF.png",
+        link: "#"
+    }];
     var text = "";
     $("#upcoming-events").append(text);
 }
