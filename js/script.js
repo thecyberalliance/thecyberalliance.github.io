@@ -145,100 +145,20 @@ function createEvent() {
     $("#target>ul").append(text);
 }
 
-
-// function createPastEvents() {
-//     let events = [{
-//         topic: "Hands-On CTF Session",
-//         day: "02",
-//         month: "May",
-//         year: "2021",
-//         description: "Learn Basic Cryptography based CTF challenges.",
-//         image: "media/events/1.png",
-//         link: "#",
-//     }, {
-//         topic: "Introduction to CTF",
-//         day: "10",
-//         month: "Apr",
-//         year: "2021",
-//         description: "Getting started with playing CTF for absolute beginners...",
-//         image: "media/events/event4.png",
-//         image: "media/events/1.png",
-//         link: "#",
-//     }, {
-//         topic: "Introduction to Cyber Security",
-//         day: "13",
-//         month: "Dec",
-//         year: "2020",
-//         description: "An introductory session for absolute beginners in Cyber Security.",
-//         image: "media/events/event3.png",
-//         // image: "media/events/1.png",
-//         link: "#",
-//     }, {
-//         topic: "Introduction to Linux and Shell",
-//         day: "22",
-//         month: "Nov",
-//         year: "2020",
-//         description: "Basic Linux and Shell Programming for absolute beginners...",
-//         image: "media/events/event2.png",
-//         // image: "media/events/1.png",
-//         link: "https://www.youtube.com/watch?v=xPAJf-tc80c",
-//     }, {
-//         topic: "Introducing The Cyber Alliance",
-//         day: "17",
-//         month: "Oct",
-//         year: "2020",
-//         description: "A perfect kickstart for your learning adventure...",
-//         image: "media/events/event1.jpg",
-//         // image: "media/events/1.png",
-//         link: "https://www.youtube.com/watch?v=GMWN6GJG7Og",
-//     }];
-
-//     var text = "";
-
-//     events.forEach(event => {
-//         text += `
-//         <!-- Column -->
-//         <div class="col-md-4 on-hover">
-//             <div class="card border-0 mb-4">
-//                 <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
-//                 <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
-//                 <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
-//                 <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-//                 <!--<a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Watch Session</a>-->
-//             </div>
-//         </div>
-//         `;
-//     });
-//     $("#past-events").append(text);
-// }
-
 function createUpcomingEvents() {
-    let events = [{
-        topic: "Introduction to CTF",
-        day: "11",
-        month: "Jan",
-        year: "2025",
-        description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
-        image: "media/events/Introduction_to_CTF.png",
-        link: "#"
-    }];
+    let events = [
+    //     {
+    //     topic: "Introduction to CTF",
+    //     day: "11",
+    //     month: "Jan",
+    //     year: "2025",
+    //     description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
+    //     image: "media/events/Introduction_to_CTF.png",
+    //     link: "#"
+    // }
+];
 
     var text = "";
-
-    // events.forEach(event => {
-    //     text += `
-    //     <!-- Column -->
-    //     <div class="col-md-4 on-hover">
-    //         <div class="card border-0 mb-4">
-    //             <a href="` + event.link + `"><img class="card-img-top" src="` + event.image + `" alt="Event"></a>
-    //             <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">` + event.month + `<span class="d-block">` + event.day + `</span>` + event.year + `</div>
-    //             <h5 class="font-weight-medium mt-3 ml-2 mr-2"><a href="` + event.link + `" class="text-decoration-none link">` + event.topic + `</a></h5>
-    //             <p class="text-grey mt-3 ml-2 mr-2">` + event.description + `</p>
-    //             <a href="` + event.link + `" class=" btn btn-primary linking mt-2 mr-2 ml-2 mb-2" target="_blank">Register Now</a>
-    //         </div>
-    //     </div>
-    //     `;
-    // });
     
     events.forEach(event => {
         text += `
@@ -258,7 +178,17 @@ function createUpcomingEvents() {
 }
 
 function createPastEvents() {
-    let events = [{
+    let events = [
+        {
+            topic: "Introduction to CTF",
+            day: "11",
+            month: "Jan",
+            year: "2025",
+            description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
+            image: "media/events/Introduction_to_CTF.png",
+            link: "https://www.linkedin.com/posts/the-cyber-alliance_cybersecurity-studentclub-rru-activity-7283848972849270784-TDpN?utm_source=share&utm_medium=member_desktop"
+        },
+        {
         topic: "Introduction to The Cyber Alliance 2025",
         day: "09",
         month: "Jan",
