@@ -180,6 +180,15 @@ function createUpcomingEvents() {
 function createPastEvents() {
     let events = [
         {
+            topic: "The Art of Bug Hunting",
+            day: "22",
+            month: "Mar",
+            year: "2025",
+            description: "The Art of Bug Hunting by Ms. Aksha Chudasma.",
+            image: "media/events/The_Art_of_Bug_Hunting.png",
+            link: "https://www.linkedin.com/posts/the-cyber-alliance_cybersecurity-bugbounty-techtalk-activity-7304079275249352705-hiZ8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdt6kABMW8Rz8FTP_8_C2zMtwNqGv2IaTk"
+        },
+        {
             topic: "Introduction to CTF",
             day: "11",
             month: "Jan",
