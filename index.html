@@ -1,46 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <title>The Cyber Alliance - TCA</title>
-  <meta name="description" content="An Information Security Student's Club at Rashtriya Raksha University" />
-  <meta name="author" content="The Cyber Alliance - TCA" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="media/favicon.png" type="image/png" />
+    <meta charset="utf-8">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/bootstrap4-neon-glow.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <title>The Cyber Alliance - TCA</title>
+
+    <meta name="description" content="An Information Security Student's Club at Rashtriya Raksha University">
+    <meta name="author" content="The Cyber Alliance - TCA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+<style>
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        /* overflow: hidden */
+        /* background-color: black; */
+    }
+    
+    .first-div {
+        font-family: Courier;
+        /* font-size: 1em; */
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+    
+    .panel h1 {
+        font-family: Courier, monospace;
+    }
+    
+    .panel div {
+        font-family: Courier, monospace;
+    }
+    
+    #particles-js {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 100vh;
+    }
+    
+    .content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .content {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    
+    .tca-logo {
+        width: 500px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .display-2 {
+            font-size: 4rem;
+        }
+        .tca-logo {
+            width: 300px;
+            margin-bottom: 50px;
+        }
+        .tca-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+</style>
 
-<body>
-  <!-- Background Particles -->
-  <div id="particles-js"></div>
+<body onload="handleWindowResize()" onresize="handleWindowResize()">
+    <!-- particles.js container -->
+    <header></header>
+    <div class="first-div">
+        <div id="particles-js"></div>
+        <div class="content">
+            <div class="panel jumbotron bg-transparent mb-0 radius-0">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="display: flex;justify-content: center;align-items: center;">
+                        <img src="media/logo-2.png" class="tca-logo" alt="TCA Logo">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 tca-content">
+                        <div>
+                            <h1 class="display-2 text-white">The Cyber</h1>
+                            <h1 class="display-2 text-white">Allianc<span class="vim-caret backWhite">e</span></h1>
 
-  <!-- Main Section -->
-  <main class="d-flex align-items-center justify-content-center min-vh-100">
-    <div class="container text-center text-white">
-      <img src="media/logo-2.png" class="img-fluid mb-4" style="max-width: 300px;" alt="TCA Logo" />
-      <h1 class="display-3">The Cyber Alliance</h1>
-      <p class="lead text-success">Hack. Patch. Repeat.</p>
-      <p class="text-success">Let's Learn, Grow & Hack Together</p>
-      <a href="https://forms.gle/Hks73Sr7uiMXFj8P6" class="btn btn-outline-light px-4 mt-3">Join the Squad</a>
+                            <div class="lead mb-3 text-mono text-success">
+                                Hack. Patch. Repeat.
+                            </div>
+                            <div class="text-darkgrey text-mono my-2 text-success">
+                                Let's Learn, Grow & Hack Together
+                            </div>
+                            <div style="font-family:Courier;">
+                                <button href="" onclick="btnJoinClick()" class="btn btn btn-outline-light btn-shadow px-3 my-2 ml-0 ml-sm-1 text-left ">Join the squad</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="text-white text-center py-3" style="background-color: rgba(52, 58, 64, 0.6);">
-    A Student Run Club at 
-    <a href="https://rru.ac.in/school-of-it-artificial-intelligence-and-cyber-security-sitaics/" class="text-success">SITAICS</a> 
-    of <a href="https://rru.ac.in/" class="text-success">Rashtriya Raksha University</a>
-  </footer>
+    <footer>
+        <div class="fixed-bottom pb-2 pt-2 text-white text-center" style="background-color: rgb(52, 58, 64, 0.4);">
+            A Student Run Club at <a href="https://rru.ac.in/school-of-it-artificial-intelligence-and-cyber-security-sitaics/">SITAICS</a> of <a href="https://rru.ac.in/">Rashtriya Raksha University</a><br />
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            createNav(["active", "", "", "", "", ""], "fixed-top");
+            handleWindowResize(null);
+        });
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
+        function btnJoinClick(e) {
+            // if (moment().isAfter("2020-10-17T12:00:00+05:30")) {
+            // Looks like you are a Hackur. But for accessing the link, you will need to hack Google ;P
+            window.open("https://forms.gle/Hks73Sr7uiMXFj8P6");
+            //} else {
+            //    alert("Oops! It's not the correct time to press that button. Try again later...");
+            //}
+        }
+
+        function handleWindowResize(e) {
+            $(".content").css({
+                "margin-top": $(".navbar").outerHeight(),
+                "margin-bottom": $(".fixed-bottom").outerHeight()
+            });
+
+        }
+    </script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
