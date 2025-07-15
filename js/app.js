@@ -1,4 +1,4 @@
-/* -----------------------------------------------
+﻿/* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
 
@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "assets/images/backgrounds/github.svg",
           "width": 100,
           "height": 100
         }
@@ -131,3 +131,4 @@ particlesJS('particles-js',
   }
 
 );
+
