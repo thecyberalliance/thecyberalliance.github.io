@@ -1,39 +1,19 @@
-/* Modern scrollbar styling with better browser support */
+/*scroller bar*/
+
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #232943;
-  border-radius: 6px;
-  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 6px;
-  transition: background 0.3s ease;
+    background: rgb(255, 255, 255, 0.4);
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-::-webkit-scrollbar-corner {
-  background: #232943;
-}
-
-/* Firefox scrollbar support */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.4) #232943;
-}
-
-/* Fallback for browsers without scrollbar styling */
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.4) #232943;
-  }
+    background: rgb(255, 255, 255, 0.9);
 }

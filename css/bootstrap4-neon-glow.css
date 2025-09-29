@@ -1,63 +1,65 @@
-﻿/*! Bootstrap 5 "Neon Glow" Theme - Modernized */
+/*! Bootstrap 4 "Neon Glow" Theme by HackerThemes, https://hackerthemes.com */
+/* List of color variables that arent in theme colors */
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 :root {
-  /* Core colors */
-  --bs-blue: #007bff;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #e83e8c;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #28a745;
-  --bs-teal: #20c997;
-  --bs-cyan: #17a2b8;
-  --bs-white: #fff;
-  --bs-gray: #1d1e2f;
-  --bs-gray-dark: #11111d;
-  
-  /* Theme colors */
-  --bs-primary: #714cdf;
-  --bs-secondary: #16a4de;
-  --bs-success: #17b06b;
-  --bs-info: #2983fe;
-  --bs-warning: #f97515;
-  --bs-danger: #ff3c5c;
-  --bs-light: #dbebfb;
-  --bs-dark: #32334a;
-  
-  /* Typography */
-  --bs-font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --bs-font-monospace: "Hack", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  
-  /* Breakpoints */
-  --bs-breakpoint-xs: 0;
-  --bs-breakpoint-sm: 576px;
-  --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: 992px;
-  --bs-breakpoint-xl: 1200px;
-  --bs-breakpoint-xxl: 1400px;
-}
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #1d1e2f;
+  --gray-dark: #11111d;
+  --primary: #714cdf;
+  --secondary: #16a4de;
+  --success: #17b06b;
+  --info: #2983fe;
+  --warning: #f97515;
+  --danger: #ff3c5c;
+  --light: #dbebfb;
+  --dark: #32334a;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
-/* Modern box-sizing */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-/* Updated body styles */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block; }
+
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #e4e2ff;
-  background-color: #0c0d16;
-  background-image: url("../assets/images/backgrounds/ng-background-dot.png");
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
+  text-align: left;
+  background-color: #0c0d16; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8675,7 +8677,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 3.5rem; } }
 
 body {
-  background-image: url("../assets/images/backgrounds/ng-background-dot.png"); }
+  background-image: url("../images/ng-background-dot.png"); }
 
 .btn-shadow {
   margin-left: 8px; }
@@ -9228,4 +9230,3 @@ body {
   display: inline-block;
   height: 40px;
   width: 40px; }
-

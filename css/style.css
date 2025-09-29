@@ -34,12 +34,8 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* Import modern font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 body{
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font:normal 75% 'Inter', Arial, Helvetica, sans-serif;
+  font:normal 75% Arial, Helvetica, sans-serif;
 }
 
 canvas{
@@ -93,78 +89,8 @@ canvas{
   width: 100%;
   height: 100%;
   background-color: #111111;
-  background-image: url('../assets/images/backgrounds/particles-bg.jpg');
+  background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-/* Enhanced navbar visibility with consistent styling */
-.navbar {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 20, 0.9)) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.navbar-brand {
-    color: #ffffff !important;
-    font-weight: 600;
-    font-size: 1.4rem;
-    text-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navbar-brand:hover {
-    color: #00ff88 !important;
-    text-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
-    transform: translateY(-1px);
-}
-
-.navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85) !important;
-    font-weight: 500;
-    font-size: 0.95rem;
-    padding: 0.75rem 1.25rem !important;
-    border-radius: 8px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #00ff88 !important;
-    text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
-    transform: translateY(-2px);
-    background-color: rgba(0, 255, 136, 0.08);
-    border: 1px solid rgba(0, 255, 136, 0.2);
-}
-
-.navbar-nav .nav-link.active {
-    color: #00ff88 !important;
-    background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 204, 255, 0.1));
-    text-shadow: 0 0 20px rgba(0, 255, 136, 0.7);
-    border: 1px solid rgba(0, 255, 136, 0.3);
-}
-
-/* Mobile navbar improvements */
-@media (max-width: 768px) {
-    .navbar-collapse {
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0.98), rgba(20, 20, 20, 0.95));
-        border-radius: 12px;
-        margin-top: 15px;
-        padding: 1.5rem;
-        border: 1px solid rgba(0, 255, 136, 0.2);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-    }
-}
-
-/* Update font paths */
-@font-face {
-  font-family: 'CustomFont';
-  src: url('../assets/fonts/font-file.woff2') format('woff2');
 }

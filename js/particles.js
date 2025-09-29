@@ -1,4 +1,4 @@
-﻿/* -----------------------------------------------
+/* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
 /* Demo / Generator : vincentgarreau.com/particles.js
@@ -1216,7 +1216,7 @@ var pJS = function(tag_id, params){
         });
 
     /* prepare to create img with colored svg */
-    var svg = new Blob([coloredSvgXml], {type: 'assets/images/team/svg+xml;charset=utf-8'}),
+    var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
         DOMURL = window.URL || window.webkitURL || window,
         url = DOMURL.createObjectURL(svg);
 
@@ -1263,7 +1263,7 @@ var pJS = function(tag_id, params){
   };
 
   pJS.fn.vendors.exportImg = function(){
-    window.open(pJS.canvas.el.toDataURL('assets/images/team/png'), '_blank');
+    window.open(pJS.canvas.el.toDataURL('image/png'), '_blank');
   };
 
 

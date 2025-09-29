@@ -1,4 +1,4 @@
-﻿<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <meta name="author" content="The Cyber Alliance - TCA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/bootstrap4-neon-glow.css">
+    <link rel="stylesheet" href="https://github.com/Mit-Patel/The-Cyber-Alliance/tree/master/css/bootstrap4-neon-glow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -74,7 +74,7 @@
         <h1 class="display-3 text-center pt-5" style="font-family:Courier;font-size: 40px;">Blogs</h1>
         <div class="col-md-12">
             <h1>CYBER KILL CHAIN</h1>
-            <p>'The Cyber kill chain, also known as CKC which is a phase-based cybersecurity model developed by Lockheed Martin in 2011.Similar in concept to the militaryâ€™s model, it defines the steps used by cyber attackers in todayâ€™s cyber-based attacks.
+            <p>'The Cyber kill chain, also known as CKC which is a phase-based cybersecurity model developed by Lockheed Martin in 2011.Similar in concept to the military’s model, it defines the steps used by cyber attackers in today’s cyber-based attacks.
                 The theory is that by understanding each of these stages, defenders can better identify and stop attackers at each of the respective stages.The kill chain helps us understand and combat ransomware, security breaches, and advanced persistent
                 attacks (APTs).</p>
             <p><button class="button button4 pull-right"><a href="#" style="color: whitesmoke;">Read more</a></button></p>
@@ -85,9 +85,9 @@
             <hr>
 
             <h1>RED TEAM &amp; BLUE TEAM</h1>
-            <p>A red team/blue team exercise is a cybersecurity assessment technique that uses simulated attacks to gauge the strength of the organizationâ€™s existing security capabilities and identify areas of improvement in a low-risk environment.A red
+            <p>A red team/blue team exercise is a cybersecurity assessment technique that uses simulated attacks to gauge the strength of the organization’s existing security capabilities and identify areas of improvement in a low-risk environment.A red
                 team that uses real-world adversary tradecraft in an attempt to compromise the environment.A blue team that consists of incident responders who work within the security unit to identify, assess and respond to the intrusion.Red team/blue
-                team simulations play an important role in defending the organization against a wide range of cyberattacks from todayâ€™s sophisticated adversaries.</p>
+                team simulations play an important role in defending the organization against a wide range of cyberattacks from today’s sophisticated adversaries.</p>
             <p><button class="button button4 pull-right"><a href="#" style="color: whitesmoke;">Read more</a></button></p>
             <div style="padding-bottom: 10px;">
                 <span class="badge">Posted 10-11-2021 12:47:04</span>
@@ -100,13 +100,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
     <script>
         $(document).ready(function() {
-            const navbar = new TCANavbar();
+            createNav(["", "", "", "active", "", ""], "");
             createSubNav(["", "active", "", "", ""], "");
-            createFooter();
+            createBlogs();
+
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 
@@ -114,4 +115,3 @@
 </body>
 
 </html>
-
