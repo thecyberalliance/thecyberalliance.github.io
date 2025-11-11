@@ -180,9 +180,18 @@ function createUpcomingEvents() {
 function createPastEvents() {
     let events = [
         {
+            topic: "Introduction to Pentesting",
+            day: "23",
+            month: "Mar",
+            year: "2025",
+            description: "Introduction to Pentesting by Mr. Sanchay Singh.",
+            image: "media/events/Introduction_to_Pentesting.jpg",
+            link: "https://www.linkedin.com/posts/the-cyber-alliance_cybersecurity-penetrationtesting-ethicalhacking-activity-7309466160243130368-ROmx"
+        },
+        {
             topic: "The Art of Bug Hunting",
             day: "22",
-            month: "Mar",
+            month: "Feb",
             year: "2025",
             description: "The Art of Bug Hunting by Ms. Aksha Chudasma.",
             image: "media/events/The_Art_of_Bug_Hunting.png",
