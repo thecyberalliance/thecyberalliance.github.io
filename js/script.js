@@ -147,16 +147,16 @@ function createEvent() {
 
 function createUpcomingEvents() {
     let events = [
-    //     {
-    //     topic: "Introduction to CTF",
-    //     day: "11",
-    //     month: "Jan",
-    //     year: "2025",
-    //     description: "Introduction to CTF (Capture The Flag) and CTF Live demonstration Week 01.",
-    //     image: "media/events/Introduction_to_CTF.png",
-    //     link: "#"
-    // }
-];
+        {
+            topic: "Cyber Case File: Behind the Curtain - The Story of the Rs 200 Crore Fraud and Dubai Money Trail",
+            day: "12",
+            month: "Nov",
+            year: "2025",
+            description: "As part of our Cyber Case Files series, we are hosting an exclusive expose on one of India's most massive economic frauds, tracing the complex money trail to Dubai.",
+            image: "media/events/Cyber Case File - 200CR Fraud.jpg",
+            link: "#"
+        }
+    ];
 
     var text = "";
     
@@ -179,6 +179,15 @@ function createUpcomingEvents() {
 
 function createPastEvents() {
     let events = [
+        {
+            topic: "Cyber Case Files: Digital Arrest Scams in India",
+            day: "07",
+            month: "Nov",
+            year: "2025",
+            description: "Learn how fraudsters impersonate high-ranking officials (CBI, Police, ED) to coerce victims and, most importantly, how to protect yourself and your family.",
+            image: "media/events/Cyber Case File - Digital Arrest Scam.jpg",
+            link: "#"
+        },
         {
             topic: "Introduction to Pentesting",
             day: "23",
